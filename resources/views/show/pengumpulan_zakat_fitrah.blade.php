@@ -1,0 +1,1 @@
+@include('show.bayar_z')

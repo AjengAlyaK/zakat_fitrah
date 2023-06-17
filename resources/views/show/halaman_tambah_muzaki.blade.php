@@ -1,0 +1,1 @@
+@include('show.input_muzaki')

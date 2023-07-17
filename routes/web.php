@@ -34,7 +34,7 @@ Route::get('/dashboard', function () {
 Route::get('/dashboard_view/{id}', [HomeController::class, 'v_m'])->middleware('auth');
 Route::get('/tambah_muzaki', [HomeController::class, 'tambah_muzaki'])->middleware('auth');
 Route::post('/save_muzaki', [HomeController::class, 'save_muzaki'])->middleware('auth');
-Route::get('/kembali_ke_tambah', [HomeController::class, 'kembali_ke_tambah'])->middleware('auth');
+// Route::get('/kembali_ke_tambah', [HomeController::class, 'kembali_ke_tambah'])->middleware('auth');
 Route::get('/edit_data_muzaki/{id}', [HomeController::class, 'edit_data_muzaki'])->middleware('auth');
 Route::post('/save_perubahan_muzaki/{id}', [HomeController::class, 'save_perubahan_muzaki'])->middleware('auth');
 Route::get('/delete_data_muzaki/{id}', [HomeController::class, 'delete_data_muzaki'])->middleware('auth');

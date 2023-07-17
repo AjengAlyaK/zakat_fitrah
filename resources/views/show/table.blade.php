@@ -57,7 +57,8 @@
                     <td>{{$loop->iteration}}</td>
                     <td>{{$m->nama_muzakki}}</td>
                     <td>{{$m->jumlah_tanggungan}}</td>
-                    <td>{{$m->kategori_mustahik_id}}</td>
+                    {{-- <td>{{$m->kategori_mustahik_id}}</td> --}}
+                    <td>{{$m->nama_kategori}}</td>
                     <td>
                         {{-- <a href="" onclick="alert({{$m->nama_muzaki}})" class="btn btn-primary btn-xs"><i class="fa fa-folder"></i> View </a> --}}
                         <!-- Trigger the modal with a button -->

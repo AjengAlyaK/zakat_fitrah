@@ -12,7 +12,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 // Ajeng Alya Kartika Sari (217006056)
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens;
     use HasFactory;

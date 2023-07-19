@@ -1,11 +1,12 @@
 <?php
 
 use App\Models\muzakki;
+use Auth\LoginController;
+use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,7 +31,7 @@ Route::middleware([
 Route::get('/dashboard', function () {
         // return view('dashboard', ['muzaki'=>muzakki::all()]);
         return view('dashboard', ['muzaki'=>muzakki::with('kategori_mustahik')->get()]);
-    })->middleware('auth')->name('dashboard');
+    })->middleware(['auth', 'verified'])->name('dashboard');
 });
 
 // mustahik
@@ -92,11 +93,12 @@ Route::get('/print-laporan-distribusi', [HomeController::class, 'print_laporan_d
 // logout
 Route::get('/logout', [HomeController::class, 'logout'])->middleware(['auth', 'verified']);
 
+
 // Ajeng Alya Kartika Sari (217006056)
 
 // Verify Email
 
-// route 1
+// 1
 Route::get('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');

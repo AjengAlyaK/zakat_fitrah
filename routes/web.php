@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\GoogleCotroller;
+
+use App\Http\Controllers\GoogleController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 /*
@@ -116,3 +119,9 @@ Route::post('/email/verification-notification', function (Request $request) {
 
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
+
+
+// google login
+
+route::get('auth/google',[GoogleController::class, 'googlepage']);
+route::get('auth/google/callback', [GoogleController::class, 'googlecallback']);

@@ -43,6 +43,9 @@
                     {{ __('Log in') }}
                 </x-button>
             </div>
+            <div>
+                <a style="background-color:rgb(54, 54, 116); color: white" href="auth/google">Login With Google</a>
+            </div>
         </form>
     </x-authentication-card>
 </x-guest-layout>

@@ -113,7 +113,7 @@
 										<div class="item form-group">
 											<label for="keterangan" class="col-form-label col-md-3 col-sm-3 label-align">Keterangan</label>
 											<div class="col-md-6 col-sm-6 ">
-												<select name="kategori_mustahik_id" id="">
+												<select class="form-control" name="kategori_mustahik_id" id="">
 													@foreach ($kategori as $k)
 													<option name="kategori_mustahik_id" value="{{$k->id}}">{{$k->nama_kategori}}</option>
 													@endforeach

@@ -111,7 +111,7 @@
 										<div class="item form-group">
 											<label for="keterangan" class="col-form-label col-md-3 col-sm-3 label-align">Keterangan</label>
 											<div class="col-md-6 col-sm-6 ">
-												<select class="form-select" name="kategori_mustahik_id" id="" required>
+												<select class="form-control" name="kategori_mustahik_id" id="" required>
 													<option selected value="{{$muzaki->kategori_mustahik->id}}">{{$muzaki->kategori_mustahik->nama_kategori}}</option>
 													<option value="1">Fakir</option>
 													<option value="2">Miskin</option>

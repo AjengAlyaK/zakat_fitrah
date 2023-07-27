@@ -7,9 +7,10 @@
         <ul class=" navbar-right">
           <li class="nav-item dropdown open" style="padding-left: 15px;">
             <a href="#" class="user-profile "id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-              <img hidden src="images/img.jpg" alt=""><i class="fa fa-power-off" aria-hidden="true"></i>
+              <img src="gentelella/production/images/admin2.jpg" alt="">
             </a>
             <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item"  href="{{ route('profile.show') }}"> Profile</a>
                 <a class="dropdown-item" href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
             </div>
           </li>

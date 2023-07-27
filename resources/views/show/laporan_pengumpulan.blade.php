@@ -79,7 +79,7 @@
             </div>
             <div class="x_content">
                 <!-- start project list -->
-                <table class="table table-striped projects">
+                <table class="table table-striped projects table-hover">
                 <thead>
                     <tr>
                     <th style="width: 20%">Total Muzakki</th>

@@ -87,7 +87,7 @@
                 @endif
     
                 <!-- start project list -->
-                <table class="table table-striped projects">
+                <table class="table table-striped projects table-hover">
                 <thead>
                     <tr>
                     <th style="width: 1%">#</th>

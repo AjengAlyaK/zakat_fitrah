@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <x-authentication-card-logo />
+            <h1 style="font-size: 27px;">Zakat Fitrah</h1>
         </x-slot>
 
         <x-validation-errors class="mb-4" />
@@ -39,12 +39,19 @@
                     </a>
                 @endif
 
-                <x-button class="ml-4">
+                {{-- <x-button class="ml-4 w-full justify-center">
+                    {{ __('Log in') }}
+                </x-button> --}}
+            </div>
+            <div class="w-full max-w-md flex flex-col">
+                <x-button class="mt-3 w-full justify-center">
                     {{ __('Log in') }}
                 </x-button>
             </div>
-            <div>
-                <a style="background-color:rgb(54, 54, 116); color: white" href="auth/google">Login With Google</a>
+            <div class="w-full max-w-md flex flex-col">
+                <x-button class="mt-3 w-full justify-center button-outline-success">
+                    <a href="auth/google">Login With Google</a>
+                </x-button>
             </div>
         </form>
     </x-authentication-card>

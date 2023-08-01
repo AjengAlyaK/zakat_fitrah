@@ -44,12 +44,12 @@
                 </x-button> --}}
             </div>
             <div class="w-full max-w-md flex flex-col">
-                <x-button class="mt-3 w-full justify-center">
+                <x-button class="mt-3 w-full justify-center" style="background-color: #2a3f54; color : white;">
                     {{ __('Log in') }}
                 </x-button>
             </div>
             <div class="w-full max-w-md flex flex-col">
-                <x-button class="mt-3 w-full justify-center button-outline-success">
+                <x-button class="mt-3 w-full justify-center" style="background-color: white; color:black; border: 1px solid #2a3f54">
                     <a href="auth/google">Login With Google</a>
                 </x-button>
             </div>

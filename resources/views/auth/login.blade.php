@@ -34,7 +34,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                    <a style="text-decoration:none" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
@@ -44,15 +44,30 @@
                 </x-button> --}}
             </div>
             <div class="w-full max-w-md flex flex-col">
-                <x-button class="mt-3 w-full justify-center" style="background-color: #2a3f54; color : white;">
+                <x-button id="myButton" onclick="changeColor()" class="mt-3 w-full justify-center" style="background-color: #2a3f54; color : white;border: 1px solid #2a3f54" onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#2a3f54';" onmouseout="this.style.backgroundColor='#2a3f54'; this.style.color='#ffffff';">
                     {{ __('Log in') }}
                 </x-button>
             </div>
             <div class="w-full max-w-md flex flex-col">
-                <x-button class="mt-3 w-full justify-center" style="background-color: white; color:black; border: 1px solid #2a3f54">
+                <x-button class="mt-3 w-full justify-center" style="background-color: #ffffff; color:black; border: 1px solid #2a3f54" onmouseover="this.style.backgroundColor='#2a3f54'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#ffffff'; this.style.color='#2a3f54';">
                     <a href="auth/google">Login With Google</a>
                 </x-button>
             </div>
         </form>
+
+        {{-- doesnt work --}}
+        <script>
+            function changeColor() {
+            var button = document.getElementById('myButton');
+            if (button.style.backgroundColor === '#2a3f54') {
+                button.style.backgroundColor = '#000000'; // Change to your desired color when clicked
+                button.style.color = '#ffffff'; // Change to your desired text color when clicked
+            } else {
+                button.style.backgroundColor = '#2a3f54'; // Revert to the initial color when clicked again
+                button.style.color = '#ffffff'; // Revert to the initial text color when clicked again
+            }
+            }
+
+        </script>
     </x-authentication-card>
 </x-guest-layout>

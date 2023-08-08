@@ -18,6 +18,11 @@ use App\Http\Controllers\Session;
 // Ajeng Alya Kartika Sari (217006056)
 class HomeController extends Controller
 {
+    // profile
+    public function profile(){
+        return view('show.profile');
+    }
+
     public function index()
     {
         return view('auth.login');

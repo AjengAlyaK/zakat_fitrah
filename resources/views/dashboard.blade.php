@@ -20,7 +20,8 @@
     <!-- menu profile quick info -->
     <div class="profile clearfix">
         <div class="profile_pic">
-            <a href="{{ route('profile.show') }}"><img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img"></a>
+            {{-- href="{{ route('profile.show') }}" --}}
+            <a href="/profile"><img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img"></a>
         {{-- <img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img"> --}}
         </div>
         <div class="profile_info">

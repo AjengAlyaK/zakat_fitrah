@@ -37,6 +37,9 @@ Route::get('/dashboard', function () {
     })->middleware(['auth', 'verified'])->name('dashboard');
 });
 
+// profile
+Route::get('/profile', [HomeController::class, 'profile']);
+
 // mustahik
 Route::get('/dashboard_view/{id}', [HomeController::class, 'v_m'])->middleware(['auth', 'verified']);
 Route::get('/tambah_muzaki', [HomeController::class, 'tambah_muzaki'])->middleware(['auth', 'verified']);

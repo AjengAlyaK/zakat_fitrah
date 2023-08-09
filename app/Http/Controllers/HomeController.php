@@ -20,7 +20,8 @@ class HomeController extends Controller
 {
     // profile
     public function profile(){
-        return view('show.profile');
+        $user = Auth::user();
+        return view('show.profile', compact('user'));
     }
 
     public function index()

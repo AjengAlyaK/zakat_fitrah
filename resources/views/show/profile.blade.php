@@ -3,7 +3,8 @@
 <head>
 <base href="/public">
 @include('show.head')
-<title>Muzaki View</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<title>Profile</title>
 <style type="text/css">
     body {
         /* margin-top: 20px; */
@@ -65,6 +66,7 @@
     .shadow-none {
         box-shadow: none !important;
     }
+
 </style>
 </head>
 

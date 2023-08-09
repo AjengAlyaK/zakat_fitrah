@@ -10,15 +10,19 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin"
-                                class="rounded-circle" width="150">
-                            <div class="mt-3">
-                                <h4>John Doe</h4>
-                                <p class="text-secondary mb-1">Full Stack Developer</p>
-                                <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
-                                <button class="btn btn-primary">Follow</button>
-                                <button class="btn btn-outline-primary">Message</button>
-                            </div>
+                            <form action="">
+                                <img src="gentelella/production/images/admin2.jpg" alt="Admin"
+                                    class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>{{$user->name}}</h4>
+                                    {{-- <p class="text-secondary mb-1">Full Stack Developer</p> --}}
+                                    <p class="text-muted font-size-sm">{{$user->address}}</p>
+                                    <label for="input_image" class="text-white"><i class="bi bi-upload black-icon"></i></label><br>
+                                    <input id="input_image" class="d-none" type="file" class=""/>
+                                    <button class="btn btn-primary">Ubah Foto</button>
+                                    {{-- <button class="btn btn-outline-primary">Message</button> --}}
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -28,10 +32,10 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-3">
-                                <h6 class="mb-0">Full Name</h6>
+                                <h6 class="mb-0">Nama</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                Kenneth Valdez
+                                {{$user->name}}
                             </div>
                         </div>
                         <hr>
@@ -39,36 +43,34 @@
                             <div class="col-sm-3">
                                 <h6 class="mb-0">Email</h6>
                             </div>
-                            <div class="col-sm-9 text-secondary">
-                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                    data-cfemail="f5939c85b59f809e98809ddb9499">[email&#160;protected]</a>
+                            <div class="col-sm-9 text-secondary">{{$user->email}}
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-3">
-                                <h6 class="mb-0">Phone</h6>
+                                <h6 class="mb-0">No Hp</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                (239) 816-9029
+                                {{$user->nohp}}
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-3">
-                                <h6 class="mb-0">Mobile</h6>
+                                <h6 class="mb-0">Telepon</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                (320) 380-4539
+                                {{$user->telepon}}
                             </div>
                         </div>
                         <hr>
                         <div class="row">
                             <div class="col-sm-3">
-                                <h6 class="mb-0">Address</h6>
+                                <h6 class="mb-0">Alamat</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                Bay Area, San Francisco, CA
+                                {{$user->address}}
                             </div>
                         </div>
                         <hr>

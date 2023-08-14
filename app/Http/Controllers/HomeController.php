@@ -18,6 +18,15 @@ use App\Http\Controllers\Session;
 // Ajeng Alya Kartika Sari (217006056)
 class HomeController extends Controller
 {
+    // simpan perubahan profile 
+    
+
+    // edit profile
+    public function edit_profile($id){
+        $user = Auth::user($id);
+        return view('show.edit_profile', compact('user'));
+    }
+
     // profile
     public function profile(){
         $user = Auth::user();

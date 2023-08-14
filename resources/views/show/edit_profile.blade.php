@@ -122,14 +122,14 @@
             <div class="col-md-12">
                 <div class="x_panel">
                 <div class="x_title">
-                    <h2>Profile</h2>
+                    <h2>Edit Profile</h2>
                     <ul class="nav navbar-right panel_toolbox">
                     </ul>
                     <div class="clearfix">
                     </div>
                 </div>
                 <div class="x_content">
-                    @include('show.page_profile')
+                    @include('show.ubah_profile')
                 </div>
                 </div>
             </div>

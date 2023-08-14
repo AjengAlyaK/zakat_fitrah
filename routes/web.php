@@ -39,6 +39,9 @@ Route::get('/dashboard', function () {
 
 // profile
 Route::get('/profile', [HomeController::class, 'profile']);
+Route::get('/edit_profile/{id}', [HomeController::class, 'edit_profile']);
+// simpan perubahan profile
+Route::post('/simpan_perubahan _profile/{id}', [HomeController::class, 'simpan_perubahan _profile']);
 
 // mustahik
 Route::get('/dashboard_view/{id}', [HomeController::class, 'v_m'])->middleware(['auth', 'verified']);

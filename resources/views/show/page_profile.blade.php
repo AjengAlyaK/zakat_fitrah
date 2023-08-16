@@ -11,17 +11,13 @@
                     <div class="card-body">
                         <div class="d-flex flex-column align-items-center text-center">
                             <form action="">
-                                <img src="gentelella/production/images/admin2.jpg" alt="Admin" class="rounded-circle"
+                                <img src="/images/{{$user->profile_photo_path}}" alt="Admin" class="rounded-circle"
                                     width="150">
                                 <div class="mt-3">
                                     <h4>{{ $user->name }}</h4>
                                     {{-- <p class="text-secondary mb-1">Full Stack Developer</p> --}}
                                     <p class="text-muted font-size-sm">{{ $user->address }}</p>
-                                    <label style="cursor:pointer" for="input_image" class="text-primary mb-3"><i
-                                            class="bi bi-upload"></i><span class="ml-2">pilih foto</span></label><br>
-                                    <input name="profile_photo_path" id="input_image" class="d-none" type="text"
-                                        class="" />
-                                    <input type="submit" class="btn btn-primary" value="Ubah Foto">
+                                    
                                     {{-- <button class="btn btn-outline-primary">Message</button> --}}
                                 </div>
                             </form>
@@ -54,7 +50,7 @@
                                 <h6 class="mb-0">No Hp</h6>
                             </div>
                             <div class="col-sm-9 text-secondary">
-                                {{ $user->nohp }}
+                                {{ $user->no_hp }}
                             </div>
                         </div>
                         <hr>
@@ -78,7 +74,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-12">
-                                <a class="btn btn-info " target="__blank"
+                                <a class="btn btn-info "
                                     href="/edit_profile/{{$user->id}}">Edit</a>
                             </div>
                         </div>

@@ -114,15 +114,20 @@
     <div class="right_col" role="main">
         <div class="">
             <div class="page-title">
+                <div class="title_left">
+                    <h2 style="color:grey">Edit Profile</h2>
+                </div>
             </div>
             
-            <div class="clearfix"></div>
-        
+            <div class="clearfix">
+                
+            </div>
             <div class="row">
             <div class="col-md-12">
                 <div class="x_panel">
                 <div class="x_title">
-                    <h2>Edit Profile</h2>
+                    {{-- <h2>Edit Profile</h2> --}}
+                    <a href="/profile" type="button" class="btn btn-secondary text-white">Kembali</a>
                     <ul class="nav navbar-right panel_toolbox">
                     </ul>
                     <div class="clearfix">

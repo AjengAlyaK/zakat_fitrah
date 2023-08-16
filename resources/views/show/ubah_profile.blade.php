@@ -9,7 +9,8 @@
             
             <div class="col-md-8 offset-2">
                 <div class="card mb-3">
-                    <form action="/simpan_perubahan _profile/{{$user->id}}" method="POST">
+                    <form action="/simpan_perubahan_profile/{{$user->id}}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-3 d-flex align-items-center">
@@ -61,13 +62,22 @@
                                     <h6 class="mb-0">Foto Profile</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary">
+                                    <img style="width:200px" src="/images/{{$user->profile_photo_path}}" alt="">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3 d-flex align-items-center">
+                                    <h6 class="mb-0">Ubah Foto Profile</h6>
+                                </div>
+                                <div class="col-sm-9 text-secondary">
                                     <input type="file" class="form-control" value="{{$user->profile_photo_path}}" name="profile_photo_path">
                                 </div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <a class="btn btn-info " target="__blank" type="submit ">Simpan Perubahan</a>
+                                    <button class="btn btn-info " type="submit ">Simpan Perubahan</button>
                                 </div>
                             </div>
                         </div>

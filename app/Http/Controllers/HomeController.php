@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\muzakki;
 use App\Models\bayar_zakat;
 use Illuminate\Http\Request;
@@ -9,17 +10,35 @@ use App\Models\mustahik_warga;
 use Illuminate\Support\Carbon;
 use Barryvdh\DomPDF\Facade\Pdf;
 use App\Models\mustahik_lainnya;
+use App\Http\Controllers\Session;
 use App\Models\kategori_mustahik;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\Session;
 
 
 // Ajeng Alya Kartika Sari (217006056)
 class HomeController extends Controller
 {
     // simpan perubahan profile 
-    
+    public function simpan_perubahan_profile(Request $request, $id){
+        $edit = User::find($id);
+        $edit->name = $request->name;
+        $edit->email = $request->email;
+        $edit->no_hp = $request->no_hp;
+        $edit->telepon = $request->telepon;
+        $edit->address = $request->address;
+
+        $image = $request->profile_photo_path;
+        if($image){
+            $imagename = time().'.'.$image->getClientOriginalExtension();
+            $request->profile_photo_path->move('images', $imagename);
+            $edit->profile_photo_path = $imagename;
+        }
+
+        $edit->update();
+
+        return redirect()->back();
+    }
 
     // edit profile
     public function edit_profile($id){

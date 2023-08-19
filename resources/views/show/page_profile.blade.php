@@ -74,7 +74,7 @@
                         <hr>
                         <div class="row">
                             <div class="col-sm-12">
-                                <a class="btn btn-info "
+                                <a class="btn btn-primary"
                                     href="/edit_profile/{{$user->id}}">Edit</a>
                             </div>
                         </div>

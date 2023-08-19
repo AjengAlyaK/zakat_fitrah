@@ -85,11 +85,11 @@
         <!-- menu profile quick info -->
         <div class="profile clearfix">
             <div class="profile_pic">
-            <img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img">
+                <a href="/profile"><img src="/images/{{$user->profile_photo_path}}" alt="..." class="img-circle profile_img"></a>
             </div>
             <div class="profile_info">
             <span>Welcome,</span>
-            <h2>Admin</h2>
+            <h2>{{Auth::user()->name}}</h2>
             </div>
         </div>
         <!-- /menu profile quick info -->
@@ -123,7 +123,7 @@
             <div class="col-md-12">
                 <div class="x_panel">
                 <div class="x_title">
-                    <h2>Profile</h2>
+                    <h2 style="color:grey">Profile</h2>
                     <ul class="nav navbar-right panel_toolbox">
                     </ul>
                     <div class="clearfix">

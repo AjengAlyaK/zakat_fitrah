@@ -37,7 +37,7 @@ class HomeController extends Controller
 
         $edit->update();
 
-        return redirect()->back();
+        return redirect()->back()->with('status', 'Profile berhasil diubah');
     }
 
     // edit profile

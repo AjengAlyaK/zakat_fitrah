@@ -25,5 +25,9 @@
 
 	<!-- Custom Theme Style -->
 	<link href="gentelella/build/css/custom.min.css" rel="stylesheet">
-
+	<style>
+		body{
+			background-color:#f7f7f7;
+		}
+	</style>
 	

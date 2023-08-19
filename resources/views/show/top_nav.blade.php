@@ -8,7 +8,7 @@
         <ul class=" navbar-right">
           <li class="nav-item dropdown open" style="padding-left: 15px;">
             <a href="#" class="user-profile "id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-              <img src="gentelella/production/images/admin2.jpg" alt="">
+              <img src="/images/{{Auth::user()->profile_photo_path}}" alt="">
             </a>
             <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item"  href="/profile"> Profile</a>

@@ -21,7 +21,7 @@
     <div class="profile clearfix">
         <div class="profile_pic">
             {{-- href="{{ route('profile.show') }}" --}}
-            <a href="/profile"><img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img"></a>
+            <a href="/profile"><img src="/images/{{Auth::user()->profile_photo_path}}" alt="..." class="img-circle profile_img"></a>
         {{-- <img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img"> --}}
         </div>
         <div class="profile_info">

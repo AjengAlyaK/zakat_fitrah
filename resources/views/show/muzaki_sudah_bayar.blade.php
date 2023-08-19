@@ -19,7 +19,7 @@
     <!-- menu profile quick info -->
     <div class="profile clearfix">
         <div class="profile_pic">
-            <a href="/profile"><img src="gentelella/production/images/admin2.jpg" alt="..." class="img-circle profile_img"></a>
+            <a href="/profile"><img src="/images/{{Auth::user()->profile_photo_path}}" alt="..." class="img-circle profile_img"></a>
         </div>
         <div class="profile_info">
         <span>Welcome,</span>

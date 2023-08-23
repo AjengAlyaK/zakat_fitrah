@@ -76,8 +76,7 @@
             <div class="col-md-3 left_col menu_fixed">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-
-                        <a href="#" class="site_title"><span> Zakat Fitrah </span></a>
+                        <a href="/dashboard" class="site_title"><i class="fa fa-paw" aria-hidden="true"></i><span> Zakat Fitrah</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -85,8 +84,10 @@
                     <!-- menu profile quick info -->
                     <div class="profile clearfix">
                         <div class="profile_pic">
-                            <img src="/images/{{$user->profile_photo_path}}" alt="..."
+                            <a href="/profile">
+                                <img src="/images/{{$user->profile_photo_path}}" alt="..."
                                 class="img-circle profile_img">
+                            </a>
                         </div>
                         <div class="profile_info">
                             <span>Welcome,</span>

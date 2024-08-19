@@ -72,7 +72,6 @@ class HomeController extends Controller
     public function save_muzaki(Request $request)
     {
         $muzaki = muzakki::create($request->all());
-        
         return redirect()->back()->with('status', 'Muzaki berhasil ditambahkan');
     }
 
@@ -84,15 +83,12 @@ class HomeController extends Controller
     public function data_muzaki()
     {
         $muzaki = muzakki::all();
-
         return view('dashboard', compact('muzaki'));
     }
 
     public function edit_data_muzaki($id)
     {
-        // $muzaki = muzakki::find($id);
         $muzaki = muzakki::with('kategori_mustahik')->findOrfail($id);
-
         return view('show.edit_data_muzaki', compact('muzaki'));
     }
 
@@ -100,6 +96,7 @@ class HomeController extends Controller
     {
         $muzaki = muzakki::findOrfail($id);
         $muzaki->update($request->all());
+
         return redirect()->back()->with('status', 'Muzaki berhasil diubah');
 
     }
@@ -107,21 +104,18 @@ class HomeController extends Controller
     public function delete_data_muzaki($id)
     {
         $muzaki = muzakki::find($id);
-
         $muzaki->delete();
+
         return redirect()->back()->with('status', 'Muzaki berhasil dihapus');
     }
 
     public function view_data_muzaki($id)
     {
         $muzaki = muzakki::find($id);
-
         return view('dashboard', compact('muzaki'));
     }
 
-
     // Kategori Mustahik
-
     public function kategori_mustahik()
     {
         $ctg_mustahik = kategori_mustahik::all();
@@ -149,7 +143,6 @@ class HomeController extends Controller
     public function delete_kategori_mustahik($id)
     {
         $kategori_mustahik = kategori_mustahik::find($id);
-
         $kategori_mustahik->delete();
 
         return redirect()->back()->with('status', 'Kategori mustahik berhasil dihapus');;
@@ -179,7 +172,6 @@ class HomeController extends Controller
     {
         // berhasil mengambil data bayar zakat tetap harus menggunakan foreach, dengan command $muzaki->bayar_zakat
         $muzaki = muzakki::with('bayar_zakat')->get();
-        // $muzaki = bayar_zakat::with('muzakki')->get();
         return view('show.list_muzaki', compact('muzaki'));
     }
 
@@ -211,7 +203,7 @@ class HomeController extends Controller
         DB::table('muzakkis')->where('id', $request->muzakki_id)->update([
             'keterangan' => $request->keterangan
         ]);
-        // $muzaki_bayar = bayar_zakat::create($request->all());
+
         return redirect()->back()->with('status', 'Muzaki berhasil mengumpulkan zakat');
     }
 
@@ -249,12 +241,9 @@ class HomeController extends Controller
         return redirect()->back()->with('status', 'Data muzaki bayar zakat berhasil diupdate');
     }
 
-
     // Distribusi Zakat Fitrah
-    
     public function distribusi_zfw()
     {
-        // berhasil
         $muzaki = muzakki::with('kategori_mustahik')->get();
         return view('show.distribusi_zfw', compact('muzaki'));
     }
@@ -284,7 +273,6 @@ class HomeController extends Controller
         DB::table('muzakkis')->where('id', $request->muzakki_id)->update([
             'keterangan2' => $request->keterangan2
         ]);
-        // $mustahik_warga = mustahik_warga::create($request->all());
         return redirect()->back()->with('status', 'Distribusi zakat fitrah warga berhasil ditambahkan');
     }
 
@@ -366,7 +354,6 @@ class HomeController extends Controller
 
     public function laporan_distribusi()
     {
-        // $k_m = kategori_mustahik::all();
         $a = DB::table('muzakkis')->where('kategori_mustahik_id', '2')->count();
         $b = DB::table('mustahik_lainnyas')->where('kategori_mustahik_id', '5')->count();
         
@@ -412,7 +399,6 @@ class HomeController extends Controller
         $r8c= DB::table('kategori_mustahiks')->where('id', '8')->value('hak_uang');
         $r8d = DB::table('mustahik_lainnyas')->where('kategori_mustahik_id', '8')->count();    // banyak kk ibnu sabil
 
-        // return view('show.laporan_distribusi', ['k_m'=> $k_m, 'a'=>$a, 'b'=>$b]);
         return view('show.laporan_distribusi', ['r1a'=>$r1a, 'r1b'=>$r1b, 'r1c'=>$r1c, 'r1d'=>$r1d, 'r2a'=>$r2a, 'r2b'=>$r2b, 'r2c'=>$r2c, 'r2d'=>$r2d, 'r3a'=>$r3a, 'r3b'=>$r3b, 'r3c'=>$r3c, 'r3d'=>$r3d, 'r5a'=>$r5a, 'r5b'=>$r5b, 'r5c'=>$r5c, 'r5d'=>$r5d, 'r6a'=>$r6a, 'r6b'=>$r6b, 'r6c'=>$r6c, 'r6d'=>$r6d, 'r7a'=>$r7a, 'r7b'=>$r7b, 'r7c'=>$r7c, 'r7d'=>$r7d, 'r8a'=>$r8a, 'r8b'=>$r8b, 'r8c'=>$r8c, 'r8d'=>$r8d]);
     }
 
@@ -469,7 +455,6 @@ class HomeController extends Controller
         \Session::flush();
         Auth::logout();
 
-        // return view('auth.login');
         return redirect('/');
     }
 }

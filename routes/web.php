@@ -3,36 +3,21 @@
 use App\Models\muzakki;
 use Auth\LoginController;
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GoogleCotroller;
-
 use App\Http\Controllers\GoogleController;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 // Ajeng Alya Kartika Sari (217006056)
 
 Route::get('/', [HomeController::class, 'index'])->middleware('guest');
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
 Route::get('/dashboard', function () {
-        // return view('dashboard', ['muzaki'=>muzakki::all()]);
         return view('dashboard', ['muzaki'=>muzakki::with('kategori_mustahik')->get()]);
     })->middleware(['auth', 'verified'])->name('dashboard');
 });
@@ -40,14 +25,12 @@ Route::get('/dashboard', function () {
 // profile
 Route::get('/profile', [HomeController::class, 'profile'])->middleware(['auth', 'verified']);
 Route::get('/edit_profile/{id}', [HomeController::class, 'edit_profile'])->middleware(['auth', 'verified']);
-// simpan perubahan profile
 Route::post('/simpan_perubahan_profile/{id}', [HomeController::class, 'simpan_perubahan_profile'])->middleware(['auth', 'verified']);
 
 // mustahik
 Route::get('/dashboard_view/{id}', [HomeController::class, 'v_m'])->middleware(['auth', 'verified']);
 Route::get('/tambah_muzaki', [HomeController::class, 'tambah_muzaki'])->middleware(['auth', 'verified']);
 Route::post('/save_muzaki', [HomeController::class, 'save_muzaki'])->middleware(['auth', 'verified']);
-// Route::get('/kembali_ke_tambah', [HomeController::class, 'kembali_ke_tambah'])->middleware(['auth', 'verified']);
 Route::get('/edit_data_muzaki/{id}', [HomeController::class, 'edit_data_muzaki'])->middleware(['auth', 'verified']);
 Route::post('/save_perubahan_muzaki/{id}', [HomeController::class, 'save_perubahan_muzaki'])->middleware(['auth', 'verified']);
 Route::get('/delete_data_muzaki/{id}', [HomeController::class, 'delete_data_muzaki'])->middleware(['auth', 'verified']);
@@ -102,32 +85,23 @@ Route::get('/print-laporan-distribusi', [HomeController::class, 'print_laporan_d
 // logout
 Route::get('/logout', [HomeController::class, 'logout'])->middleware(['auth', 'verified']);
 
-
-// Ajeng Alya Kartika Sari (217006056)
-
 // Verify Email
-
 // 1
 Route::get('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
-
 // 2
 Route::get('/email/verify/{id}/{hash}', function (EmailVerificationRequest $request) {
     $request->fulfill();
-
     return redirect('/dashboard');
 })->middleware(['auth', 'signed'])->name('verification.verify');
-
 // 3
 Route::post('/email/verification-notification', function (Request $request) {
     $request->user()->sendEmailVerificationNotification();
-
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
 
 // google login
-
 route::get('auth/google',[GoogleController::class, 'googlepage']);
 route::get('auth/google/callback', [GoogleController::class, 'googlecallback']);

@@ -24,7 +24,6 @@ class muzakki extends Model
     {
                             // nama model reference
         return $this->belongsTo(kategori_mustahik::class);
-        // return $this->belongsTo(classRoom::class, 'foreign_key', 'other_key');
     }
 
     public function mustahik_warga()

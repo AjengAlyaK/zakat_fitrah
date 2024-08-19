@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
 // Ajeng Alya Kartika Sari (217006056)
 
 class kategori_mustahik extends Model

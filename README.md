@@ -25,29 +25,6 @@ This Zakat Fitrah app was made for zakat fitrah administration. The tech stack u
 - **Laporan Distribusi Zakat**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 💻 How to run on local
-
-Clone this repository (branch-main)
-
-```bash
-  git clone https://github.com/AjengAlyaK/restapi-greenway.git
-```
-Go to the root folder
-
-```bash
-  cd yourfoldername
-```
-
-Install all dependency
-
-```bash
-  npm install
-```
-
-Run   
-```bash
-  npm run start
-```
 
 ## 💻 How to Run Locally
 
@@ -115,5 +92,4 @@ If you like this project you can share this project to your friend
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 

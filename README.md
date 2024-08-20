@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <p align="center">
-  <img src="https://firebasestorage.googleapis.com/v0/b/mostgreen.appspot.com/o/Tak_berjudul63-hd__2_-removebg-preview.png?alt=media&token=eca5f180-7753-4567-94a5-6ed13f674861g" alt="Logo" width="100" style="vertical-align: middle;">
+  <img src="https://firebasestorage.googleapis.com/v0/b/mostgreen.appspot.com/o/%E2%80%94Pngtree%E2%80%94pay%20shodaqoh%20rice%20to%20zakat_7613159.png?alt=media&token=3bbb64c7-6e96-45b5-b5ab-eda262acce98" alt="Logo" width="100" style="vertical-align: middle;">
 </p>
 
 # Zakat Fitrah

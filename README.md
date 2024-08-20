@@ -1,1 +1,119 @@
+<a name="readme-top"></a>
+<p align="center">
+  <img src="https://firebasestorage.googleapis.com/v0/b/mostgreen.appspot.com/o/Tak_berjudul63-hd__2_-removebg-preview.png?alt=media&token=eca5f180-7753-4567-94a5-6ed13f674861g" alt="Logo" width="100" style="vertical-align: middle;">
+</p>
+
+# Zakat Fitrah
+
+This Zakat Fitrah app was made for zakat fitrah administration. The tech stack used in this project includes Laravel, MySQL and Bootstrap. This project was created to fulfill the Web Programming course requirements in the second year of a Bachelor's in Informatics.
+
+
+## 🛠 Built With
+
+### Tech Stack <a name="tech-stack"></a>
+  - Laravel
+  - MySQL
+  - Bootstrap
+
+### Key Features <a name="key-features"></a>
+- **Master Data Muzaki**
+- **Master Data Kategori**
+- **Pengumpulan Zakat Fitrah**
+- **Distribusi Zakat Fitrah Warga**
+- **Distribusi Zakat Fitrah Mustahik**
+- **Laporan Pengumpulan Zakat Fitrah**
+- **Laporan Distribusi Zakat**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 How to run on local
+
+Clone this repository (branch-main)
+
+```bash
+  git clone https://github.com/AjengAlyaK/restapi-greenway.git
+```
+Go to the root folder
+
+```bash
+  cd yourfoldername
+```
+
+Install all dependency
+
+```bash
+  npm install
+```
+
+Run   
+```bash
+  npm run start
+```
+
+## 💻 How to Run Locally
+
+
+Clone this repository (branch: main) or manually download the project as a ZIP file
+```bash
+  git clone https://github.com/AjengAlyaK/zakat_fitrah.git
+```
+
+Navigate to the root folder
+```bash
+  cd yourfoldername
+```
+
+Install Composer dependencies
+```bash
+  composer install
+```
+
+Install Node.js dependencies
+```bash
+  npm install
+```
+
+Build the assets
+```bash
+  npm run dev
+```
+
+Duplicate the .env.example file to create your environment configuration then adjust with your environment value
+```bash
+  cp .env.example .env
+```
+
+Generate the application key
+```bash
+  php artisan key:generate
+```
+Start the local development server
+```bash
+  php artisan serve
+```
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- **Fix bug in authentication**
+- **Refactor flow app**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project you can share this project to your friend
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 

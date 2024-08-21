@@ -1,66 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
+<a name="readme-top"></a>
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://firebasestorage.googleapis.com/v0/b/mostgreen.appspot.com/o/%E2%80%94Pngtree%E2%80%94pay%20shodaqoh%20rice%20to%20zakat_7613159.png?alt=media&token=3bbb64c7-6e96-45b5-b5ab-eda262acce98" alt="Logo" width="100" style="vertical-align: middle;">
 </p>
 
-## About Laravel
+# Zakat Fitrah
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This Zakat Fitrah app was made for zakat fitrah administration. The tech stack used in this project includes Laravel, MySQL and Bootstrap. This project was created to fulfill the Web Programming course requirements in the second year of a Bachelor's in Informatics.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠 Built With
 
-## Learning Laravel
+### Tech Stack <a name="tech-stack"></a>
+  - Laravel
+  - MySQL
+  - Bootstrap
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Key Features <a name="key-features"></a>
+- **Master Data Muzaki**
+- **Master Data Kategori**
+- **Pengumpulan Zakat Fitrah**
+- **Distribusi Zakat Fitrah Warga**
+- **Distribusi Zakat Fitrah Mustahik**
+- **Laporan Pengumpulan Zakat Fitrah**
+- **Laporan Distribusi Zakat**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 💻 How to Run Locally
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Clone this repository (branch: main) or manually download the project as a ZIP file
+```bash
+  git clone https://github.com/AjengAlyaK/zakat_fitrah.git
+```
 
-### Premium Partners
+Navigate to the root folder
+```bash
+  cd yourfoldername
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Install Composer dependencies
+```bash
+  composer install
+```
 
-## Contributing
+Install Node.js dependencies
+```bash
+  npm install
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Build the assets
+```bash
+  npm run dev
+```
 
-## Code of Conduct
+Duplicate the .env.example file to create your environment configuration then adjust with your environment value
+```bash
+  cp .env.example .env
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Generate the application key
+```bash
+  php artisan key:generate
+```
+Start the local development server
+```bash
+  php artisan serve
+```
 
-## Security Vulnerabilities
+## 🔭 Future Features <a name="future-features"></a>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Fix bug in authentication**
+- **Refactor flow app**
 
-## License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project you can share this project to your friend
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+

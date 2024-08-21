@@ -64,11 +64,6 @@
                         </div>
 
                     </div>
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 
@@ -232,12 +227,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- /page content -->
-
-                    <!-- footer content -->
-
-                    <!-- /footer content -->
                 </div>
             </div>
 

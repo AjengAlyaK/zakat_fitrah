@@ -30,7 +30,6 @@
                             <h2>Admin</h2>
                         </div>
                     </div>
-                    <!-- /menu profile quick info -->
 
                     <br />
 
@@ -63,19 +62,11 @@
                         </div>
 
                     </div>
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 
             <!-- top navigation -->
             @include('show.top_nav')
-            <!-- /top navigation -->
-
-            <!-- page content -->
-            <!-- page content -->
             <div class="right_col" role="main">
                 <div class="">
                     <div class="page-title">
@@ -99,12 +90,6 @@
                             <div class="x_panel">
                                 <div class="x_title">
                                     <h2>Data Mustahik Warga</h2>
-                                    {{-- @foreach ($muzaki as $m)
-                    <h3>{{dd($m->kategori_mustahik)}}</h3>
-                @endforeach --}}
-                                    {{-- @foreach ($muzaki as $item)
-                <h3>{{$item->bayar_zakat}}</h3>
-                @endforeach  --}}
                                     <ul class="nav navbar-right panel_toolbox">
 
                                         </li>
@@ -157,8 +142,6 @@
                                             @endforeach
                                         </tbody>
                                     </table>
-                                    <!-- end project list -->
-
                                 </div>
                             </div>
                         </div>
@@ -170,15 +153,6 @@
                 </div>
                 <div class="clearfix"></div>
             </footer>
-            <!-- /page content -->
-
-
-
-            <!-- /page content -->
-
-
-            <!-- footer content -->
-            <!-- /footer content -->
         </div>
     </div>
     @include('show.script')

@@ -64,11 +64,6 @@
                         </div>
 
                     </div>
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 

@@ -37,9 +37,6 @@
     @include('show.sidebar_menu')
     <!-- /sidebar menu -->
 
-    <!-- /menu footer buttons -->
-    
-    <!-- /menu footer buttons -->
     </div>
 </div>
 
@@ -50,13 +47,6 @@
 <!-- page content -->
 @include('show.table')
 
-
-
-<!-- /page content -->
-
-
-<!-- footer content -->
-<!-- /footer content -->
 </div>
 </div>
 @include('show.script')

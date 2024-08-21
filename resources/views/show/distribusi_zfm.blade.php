@@ -32,20 +32,11 @@
 
     <!-- sidebar menu -->
     @include('show.sidebar_menu')
-    <!-- /sidebar menu -->
-
-    <!-- /menu footer buttons -->
-    
-    <!-- /menu footer buttons -->
     </div>
 </div>
 
 <!-- top navigation -->
 @include('show.top_nav')
-<!-- /top navigation -->
-
-<!-- page content -->
-<!-- page content -->
 <div class="right_col" role="main">
     <div class="">
         <div class="page-title">
@@ -131,15 +122,6 @@
         </div>
         <div class="clearfix"></div>
     </footer>
-    <!-- /page content -->
-
-
-
-<!-- /page content -->
-
-
-<!-- footer content -->
-<!-- /footer content -->
 </div>
 </div>
 @include('show.script')

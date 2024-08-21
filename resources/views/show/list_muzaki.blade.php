@@ -33,7 +33,6 @@
                     <br />
 
                     <!-- sidebar menu -->
-                    {{-- @include('show.sidebar_menu') --}}
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu ">
                         <div class="menu_section">
                             <ul class="nav side-menu">
@@ -62,10 +61,6 @@
                         </div>
 
                     </div>
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 
@@ -73,7 +68,6 @@
             @include('show.top_nav')
             <!-- /top navigation -->
 
-            <!-- page content -->
             <!-- page content -->
             <div class="right_col" role="main">
                 <div class="">
@@ -98,9 +92,6 @@
                             <div class="x_panel">
                                 <div class="x_title">
                                     <h2>Data Muzaki</h2>
-                                    {{-- @foreach ($muzaki as $item)
-                <h3>{{$item->bayar_zakat}}</h3>
-                @endforeach  --}}
                                     <ul class="nav navbar-right panel_toolbox">
 
                                         </li>
@@ -154,15 +145,6 @@
                 </div>
                 <div class="clearfix"></div>
             </footer>
-            <!-- /page content -->
-
-
-
-            <!-- /page content -->
-
-
-            <!-- footer content -->
-            <!-- /footer content -->
         </div>
     </div>
     @include('show.script')

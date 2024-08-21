@@ -34,11 +34,6 @@
 
     <!-- sidebar menu -->
     @include('show.sidebar_menu')
-    <!-- /sidebar menu -->
-
-    <!-- /menu footer buttons -->
-    
-    <!-- /menu footer buttons -->
     </div>
 </div>
 
@@ -77,12 +72,6 @@
         <div class="clearfix"></div>
     </footer>
 
-
-<!-- /page content -->
-
-
-<!-- footer content -->
-<!-- /footer content -->
 </div>
 </div>
 @include('show.script')

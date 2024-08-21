@@ -32,10 +32,6 @@
 
     <!-- sidebar menu -->
     @include('show.sidebar_menu')
-    <!-- /sidebar menu -->
-
-    <!-- /menu footer buttons -->
-    <!-- /menu footer buttons -->
     </div>
 </div>
 
@@ -46,13 +42,6 @@
 <!-- page content -->
 
 @include('show.data_kategori_mustahik')
-
-
-<!-- /page content -->
-
-
-<!-- footer content -->
-<!-- /footer content -->
 </div>
 </div>
 @include('show.script')

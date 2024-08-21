@@ -32,11 +32,6 @@
 
     <!-- sidebar menu -->
     @include('show.sidebar_menu')
-    <!-- /sidebar menu -->
-
-    <!-- /menu footer buttons -->
-    
-    <!-- /menu footer buttons -->
     </div>
 </div>
 
@@ -78,10 +73,6 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                {{-- {{($a)}}
-                <br>
-                {{($b)}} --}}
-                <!-- start project list -->
                 <table class="table table-striped projects table-hover">
                 <thead>
                     <tr>
@@ -95,17 +86,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{-- @foreach ($k_m as $i)
-                    <tr>
-                        <td>{{$loop->iteration}}</td>
-                        <td>{{$i->nama_kategori}}</td>
-                        <td>{{$i->jumlah_hak}}</td>
-                        <td>{{$i->hak_uang}}</td>
-                        <td></td> 
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    @endforeach --}}
                     <tr>
                         <td>1</td>
                         <td>{{$r1a}}</td>
@@ -193,11 +173,6 @@
         </div>
         <div class="clearfix"></div>
     </footer>
-<!-- /page content -->
-
-
-<!-- footer content -->
-<!-- /footer content -->
 </div>
 </div>
 @include('show.script')

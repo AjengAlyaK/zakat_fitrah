@@ -62,11 +62,6 @@
                         </div>
 
                     </div>
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 
@@ -128,25 +123,6 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        {{-- <div class="item form-group"> --}}
-                                        {{-- <label class="col-form-label col-md-3 col-sm-3 label-align" for="jumlah_tanggungan">Jumlah Tanggungan <span class="required"></span>
-											</label>
-											<div class="col-md-6 col-sm-6 ">
-												<select name="kategori" id="">
-                                                    <option value="{{$ml->kategori}}">{{$ml->kategori}}</option>
-													<option value="Amilin">Amilin</option>
-                                                    <option value="Fisabilillah">Fisabilillah</option>
-                                                    <option value="Mualaf">Mualaf</option>
-                                                    <option value="Ibnu Sabil">Ibnu Sabil</option>
-												</select>
-											</div> --}}
-                                        {{-- </div> --}}
-                                        {{-- <div class="item form-group">
-											<label for="hak" class="col-form-label col-md-3 col-sm-3 label-align">Hak</label>
-											<div class="col-md-6 col-sm-6 ">
-												<input value="{{$ml->hak}}" name="hak" type="text" id="hak" required="required" class="form-control ">
-											</div>
-										</div> --}}
 
                                         <div class="ln_solid"></div>
                                         <div class="item form-group">

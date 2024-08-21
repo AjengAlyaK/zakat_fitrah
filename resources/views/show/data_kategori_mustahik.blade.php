@@ -84,8 +84,6 @@
         </div>
         <div class="clearfix"></div>
     </footer>
-    <!-- /page content -->
-                <!-- end project list -->
     
             </div>
             </div>
@@ -98,4 +96,3 @@
         </div>
         <div class="clearfix"></div>
     </footer>
-    <!-- /page content -->

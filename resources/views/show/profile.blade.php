@@ -7,7 +7,6 @@
 <title>Profile</title>
 <style type="text/css">
     body {
-        /* margin-top: 20px; */
         color: #1a202c;
         text-align: left;
         background-color: #f7f7f7;
@@ -99,10 +98,6 @@
         <!-- sidebar menu -->
         @include('show.sidebar_menu')
         <!-- /sidebar menu -->
-    
-        <!-- /menu footer buttons -->
-        
-        <!-- /menu footer buttons -->
         </div>
     </div>
     

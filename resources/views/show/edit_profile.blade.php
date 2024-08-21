@@ -100,11 +100,6 @@
 
                     <!-- sidebar menu -->
                     @include('show.sidebar_menu')
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 

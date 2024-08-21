@@ -39,7 +39,6 @@
                     <br />
 
                     <!-- sidebar menu -->
-                    {{-- @include('show.sidebar_menu') --}}
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu ">
                         <div class="menu_section">
                             <ul class="nav side-menu">
@@ -68,10 +67,6 @@
                         </div>
 
                     </div>
-                    <!-- /sidebar menu -->
-
-                    <!-- /menu footer buttons -->
-                    <!-- /menu footer buttons -->
                 </div>
             </div>
 
@@ -156,12 +151,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- /page content -->
-
-                    <!-- footer content -->
-
-                    <!-- /footer content -->
                 </div>
             </div>
 

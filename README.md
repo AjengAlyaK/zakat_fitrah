@@ -3,7 +3,7 @@
   <img src="https://firebasestorage.googleapis.com/v0/b/mostgreen.appspot.com/o/%E2%80%94Pngtree%E2%80%94pay%20shodaqoh%20rice%20to%20zakat_7613159.png?alt=media&token=3bbb64c7-6e96-45b5-b5ab-eda262acce98" alt="Logo" width="100" style="vertical-align: middle;">
 </p>
 
-# Zakat Fitrah
+# 🟢 Zakat Fitrah
 
 This Zakat Fitrah app was made for zakat fitrah administration. The tech stack used in this project includes Laravel, MySQL and Bootstrap. This project was created to fulfill the Web Programming course requirements in the second year of a Bachelor's in Informatics.
 
@@ -11,9 +11,14 @@ This Zakat Fitrah app was made for zakat fitrah administration. The tech stack u
 ## 🛠 Built With
 
 ### Tech Stack <a name="tech-stack"></a>
+<details>
+  <summary>Details</summary>
+    
   - Laravel
   - MySQL
   - Bootstrap
+  - Blade
+</details>
 
 ### Key Features <a name="key-features"></a>
 - **Master Data Muzaki**
